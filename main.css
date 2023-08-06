@@ -1,0 +1,701 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+html,
+body {
+    background: #111;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    
+}
+
+/*-- Inspiration taken from abdo steif -->
+/* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
+
+/* Navbar section */
+
+.nav {
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    line-height: 65px;
+    text-align: center;
+}
+
+.nav div.logo {
+    float: left;
+    width: auto;
+    height: auto;
+    padding-left: 3rem;
+}
+
+.nav div.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.nav div.logo a:hover {
+    color: #B621FE;
+}
+
+.nav div.main_list {
+    height: 65px;
+    float: right;
+}
+
+.nav div.main_list ul {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav div.main_list ul li {
+    width: auto;
+    height: 65px;
+    padding: 0;
+    padding-right: 3rem;
+}
+
+.nav div.main_list ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 65px;
+    font-size: 2.4rem;
+}
+
+.nav div.main_list ul li a:hover {
+    color: #B621FE;
+}
+
+
+/* Home section */
+
+.home {
+
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/smaller.svg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.navTrigger {
+    display: none;
+}
+
+.nav {
+    padding-top: auto;
+    padding-bottom: 20px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    z-index: 4;
+}
+
+
+/* Media qurey section */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navTrigger {
+        display: block;
+    }
+
+    .nav div.logo {
+        margin-left: 15px;
+    }
+
+    .nav div.main_list {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .nav div.show_list {
+        height: auto;
+        display: none;
+    }
+
+    .nav div.main_list ul {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #111;
+        /*same background color of navbar*/
+        background-position: center top;
+    }
+
+    .nav div.main_list ul li {
+        width: 100%;
+        text-align: right;
+    }
+
+    .nav div.main_list ul li a {
+        text-align: center;
+        width: 100%;
+        font-size: 3rem;
+        padding: 20px;
+    }
+
+    .nav div.media_button {
+        display: block;
+    }
+
+    .download {
+        top: auto;
+    }
+}
+
+
+/* Animation */
+/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
+
+.navTrigger {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    margin: auto;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    bottom: 0;
+}
+
+.navTrigger i {
+    background-color: #fff;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+}
+
+.navTrigger i:nth-child(1) {
+    -webkit-animation: outT 0.8s backwards;
+    animation: outT 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(2) {
+    margin: 5px 0;
+    -webkit-animation: outM 0.8s backwards;
+    animation: outM 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(3) {
+    -webkit-animation: outBtm 0.8s backwards;
+    animation: outBtm 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger.active i:nth-child(1) {
+    -webkit-animation: inT 0.8s forwards;
+    animation: inT 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(2) {
+    -webkit-animation: inM 0.8s forwards;
+    animation: inM 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(3) {
+    -webkit-animation: inBtm 0.8s forwards;
+    animation: inBtm 0.8s forwards;
+}
+
+@-webkit-keyframes inM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes inM {
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes outM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes outM {
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes inT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes inT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes outT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes inBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes inBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes outBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+.affix {
+    padding: 0;
+    background-color: #111;
+}
+
+
+
+
+
+
+.myH2 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.myP {
+    text-align: justify;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 20px;
+}
+
+@media all and (max-width:700px) {
+    .myP {
+        padding: 2%;
+    }
+}
+
+.mainsect {
+    background: #111;
+}
+
+.header {
+    color: #fff;
+}
+
+.footer {
+    padding-top: 50px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900');
+
+body {
+    background: radial-gradient(ellipse at bottom, #022227 0%, #000 100%);
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30vh;
+    letter-spacing: 1vw;
+    position: absolute;
+    top: 15vh;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #B621FE;
+    ;
+    background: url(images/spackle.gif);
+    background-size: auto 100%;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 8s linear infinite;
+}
+
+h1:nth-child(2) {
+    top: 50vh;
+}
+
+@keyframes shine {
+    from {
+        background-position: center 0;
+    }
+
+    to {
+        background-position: center 200%;
+    }
+}
+
+.about {
+    background-color: #111;
+    color: #fff;
+    font-size: 18px;
+}
+
+h2 {
+    /* color: #fff;
+    font-size: 75px;
+    font-family: 'Source Sans Pro', sans-serif;
+    animation: shine 8s linear infinite;*/
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer
+}
+
+h2 span {
+    transition: .5s linear
+}
+
+h2:hover span:nth-child(1) {
+    margin-right: 5px
+}
+
+h2:hover span:nth-child(2) {
+    margin-left: 30px
+}
+
+h2:hover span {
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 40px #fff;
+}
+.box {
+    color: #fff;
+    font-size: 18px;
+    
+}
+
+.para {
+    /* color: #fff;
+    font-size: 75px;
+    font-family: 'Source Sans Pro', sans-serif;
+    animation: shine 8s linear infinite;*/
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer
+}
+
+.para span {
+    transition: .5s linear
+}
+
+.para:hover span:nth-child(1) {
+    margin-right: 5px
+}
+
+.para:hover span:nth-child(2) {
+    margin-left: 30px
+}
+
+.para:hover span {
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 40px #fff;
+}
+
+[am-divider='rule'] {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 20px;
+}
+
+span.dividerline {
+    width: 40%;
+    display: inline-block;
+    border-bottom: 1px solid #5d5d5d;
+}
+
+span.text {
+    color: #fff;
+    vertical-align: -webkit-baseline-middle;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-style: italic;
+}
+
+.download {
+    width: 180px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    position: relative;
+    left: auto;
+    top: auto;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 1px;
+}
+
+.collect {
+    margin: 0;
+     position: relative;
+    top: auto;
+    left: 23vw;
+    /*-ms-transform: translateY(-50%);
+    transform: translateY(-50%); */
+    /* border: 3px solid #1FD1F9; */
+}
+
+.download:hover {
+    background-color: #1FD1F9;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+#tab-contact {
+    background-color: #897098;
+    color: #fff;
+    flex-direction: column;
+    position: absolute;
+    left: 46.5%;
+    top: 233%;
+}
+
+.contact-form-wrapper {
+    padding: 100px 0;
+  }
+  
+  .contact-form {
+    padding: 30px 40px;
+    background-color: #ffffff;
+    color: #B621FE;
+    border-radius: 12px;
+    max-width: 400px;
+  }
+  
+  .contact-form textarea {
+    resize: none;
+  }
+  
+  .contact-form .form-input,
+  .form-text-area {
+    background-color: #f0f4f5;
+    height: 50px;
+    padding-left: 16px;
+  }
+  
+  .contact-form .form-text-area {
+    background-color: #f0f4f5;
+    height: auto;
+    padding-left: 16px;
+  }
+  
+  .contact-form .form-control::placeholder {
+    color: #B621FE;
+    font-weight: 500;
+    opacity: 1;
+  }
+  
+  .contact-form .form-control:-ms-input-placeholder {
+    color: #B621FE;
+    font-weight: 500;
+  }
+  
+  .contact-form .form-control::-ms-input-placeholder {
+    color: #B621FE;
+    font-weight: 500;
+  }
+  
+  .contact-form .form-control:focus {
+    border-color: #B621FE;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.07), 0 0 8px #B621FE;
+  }
+  
+  .contact-form .title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  .contact-form .description {
+    color: #B621FE;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .contact-form .submit-button-wrapper {
+    text-align: center;
+  }
+  
+  .contact-form .submit-button-wrapper input {
+    border: none;
+    border-radius: 4px;
+    background-color: #B621FE;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 60px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+  
+  .contact-form .submit-button-wrapper input:hover {
+    background-color: #B621FE;
+  }
+  
+  .about-header {
+    color: #B621FE;
+    
+  }
