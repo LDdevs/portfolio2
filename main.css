@@ -84,12 +84,24 @@ body {
 }
 
 .lisaheading {
+    max-width: fit-content;
     text-align: center;
     z-index: 5;
     position: absolute;
     top: 10vh;
-    left: 30vw;
-    font-size: 150px;
+    left: auto;
+    font-size: 10em;
+    color: #fff;
+    font-family: "Parisienne", sans-serif;
+}
+
+.lisaheading header{
+    text-align: center;
+    z-index: 5;
+    position: absolute;
+    top: 10vh;
+    left: 40vw;
+    font-size: 10rem;
     color: #fff;
     font-family: "Parisienne", sans-serif;
 }
