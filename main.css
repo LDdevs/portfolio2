@@ -10,8 +10,6 @@ body {
 
 }
 
-/*-- Inspiration taken from abdo steif -->
-/* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
 
 /* Navbar section */
 
@@ -41,7 +39,8 @@ body {
 }
 
 .nav logo a:hover {
-    color: #B621FE;
+    color: #ffffff;
+    animation: shine 8s linear infinite;
 }
 
 .nav main_list {
@@ -49,6 +48,7 @@ body {
     float: center;
     /* position: absolute;
     left: 50vw; */
+    
     
 }
 
@@ -80,7 +80,21 @@ body {
 
 .nav div.main_list ul li a:hover {
     color: #B621FE;
+    animation: shine 8s linear infinite;
 }
+
+
+
+@keyframes shine {
+    from {
+        background-position: center 0;
+    }
+
+    to {
+        background-position: center 200%;
+    }
+}
+
 
 
 /* Home section */
@@ -114,7 +128,7 @@ body {
     line-height: 1.5vw;
     font-size: 72px;
     font-family: 'Raleway', Arial, 'sans-serif';
-    border: solid 5px red;
+    /* border: solid 5px red; */
 }
 
 /* @media screen (min-height: 789px){
