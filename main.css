@@ -76,14 +76,59 @@ body {
 /* Home section */
 
 .home {
-    background-color: #9D8DF1;
+    /* background-color: #9D8DF1; */
     width: auto;
     height: auto;
+    /*display: flex;
+    position: absolute;
+    top: 50%;
+    right: 50%; */
     /* background-image: url(images/hellolisa.svg); */
 
 }
 
-.lisaheading {
+.jumbotron {
+    background-image: url(images/mountain1.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: 60px;
+    width: auto;
+    margin: 0;
+    min-height: 200px;
+    text-align: center;
+    line-height: 1.5vw;
+    font-size: 72px;
+    font-family: 'Raleway', Arial, 'sans-serif';
+}
+.title-name {
+    color: #02136a;
+    font-family: 'Fjalla One', sans-serif;
+    padding: 4vw;
+  
+    text-transform: uppercase;
+    text-shadow: none;
+    font-size: 5vw;
+    margin-top: 20%;
+    line-height: 1em;
+    background-color: #fff;
+  
+    width: auto;
+    margin-left: 25%;
+    margin-right: 25%;
+    overflow: hidden;
+  }
+  
+  .title-job {
+    color: #fff;
+    font-weight: 800;
+    text-shadow: 1px 3px rgba(0, 0, 0, 0.4);
+    padding: 2vw;
+    padding-top: 0%;
+    font-size: 5vw;
+  }
+
+/* .lisaheading {
     max-width: fit-content;
     text-align: center;
     z-index: 5;
@@ -124,7 +169,7 @@ body {
     left: 20vw;
     font-size: 20px;
     color: #fff;
-}
+} */
 
 /* .title-top {
     color: #1FD1F9;
@@ -165,10 +210,10 @@ body {
 
     font-family: Arial;
     color: #B621FE; */
-    /* font-size: 300px; */
-    /* animation: fadeIn 15s; */
-    /* animation: colorchange 4s; */
-    /* animation-iteration-count: infinite;
+/* font-size: 300px; */
+/* animation: fadeIn 15s; */
+/* animation: colorchange 4s; */
+/* animation-iteration-count: infinite;
     -webkit-animation: fadeIn 5s;
     -moz-animation: fadeIn 5s;
     -o-animation: fadeIn 5s;
