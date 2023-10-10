@@ -21,11 +21,10 @@ body {
     position: fixed;
     line-height: 65px;
     text-align: center;
+    
 }
 
-@media screen and (min-width: 168px)  {
-    .nav div.logo ()
-}
+
 
 .nav logo {
     float: center;
@@ -50,6 +49,7 @@ body {
     float: center;
     /* position: absolute;
     left: 50vw; */
+    
 }
 
 .nav div.main_list ul {
@@ -89,8 +89,8 @@ body {
     /* background-color: #9D8DF1; */
     width: auto;
     height: auto;
-    /*display: flex;
-    position: absolute;
+    display: flexbox;
+    /*position: absolute;
     top: 50%;
     right: 50%; */
     /* background-image: url(images/hellolisa.svg); */
@@ -100,18 +100,28 @@ body {
 .jumbotron {
     background-image: url(images/mountain1.jpg);
     background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     margin-top: 60px;
     width: auto;
     margin: 0;
-    min-height: 200px;
+    min-height: 0px;
     text-align: center;
     line-height: 1.5vw;
     font-size: 72px;
     font-family: 'Raleway', Arial, 'sans-serif';
+    border: solid 5px red;
 }
+
+/* @media screen (min-height: 789px){
+    .jumbotron{
+        height: 1000px;
+    }
+} */
 .title-name {
     color: #02136a;
     font-family: 'Fjalla One', sans-serif;
@@ -686,10 +696,12 @@ h1:nth-child(2) {
     background-color: #111;
     color: #fff;
     font-size: 18px;
+    
 }
 
 .dividerline {
     width: 100vw;
+    
 }
 .rounded {
     color: #fff;
@@ -707,6 +719,7 @@ h2 {
     font-family: monospace;
     letter-spacing: 7px;
     cursor: pointer
+    
 }
 
 h2 span {
