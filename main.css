@@ -89,6 +89,7 @@ body {
 
 .jumbotron {
     background-image: url(images/mountain1.jpg);
+    background-size: 100%;
     display: flex;
     justify-content: center;
     align-items: start;
@@ -363,10 +364,6 @@ body {
         top: auto;
     }
 }
-
-
-/* Animation */
-/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
 
 .navTrigger {
     cursor: pointer;
