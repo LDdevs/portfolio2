@@ -688,6 +688,13 @@ h1:nth-child(2) {
     font-size: 18px;
 }
 
+.dividerline {
+    width: 100vw;
+}
+.rounded {
+    color: #fff;
+}
+
 h2 {
     /* color: #fff;
     font-size: 75px;
