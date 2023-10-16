@@ -2,7 +2,7 @@
 
 html,
 body {
-    background: #111;
+    background: #000;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -157,7 +157,7 @@ body {
 .title-job {
     color: #fff;
     font-weight: 800;
-    text-shadow: 1px 3px rgba(0, 0, 0, 0.4);
+    text-shadow: 1px 3px rgba(0, 0, 0, 0);
     padding: 2vw;
     padding-top: 0%;
     font-size: 5vw;
@@ -453,7 +453,7 @@ body {
 
 .affix {
     padding: 0;
-    background-color: #111;
+    background-color: #000;
 }
 
 /* .affix-logo {
@@ -486,7 +486,7 @@ body {
 }
 
 .mainsect {
-    background: #111;
+    background: #000;
 }
 
 .header {
@@ -508,7 +508,7 @@ body {
 @import url('https://fonts.googleapis.com/css?family=Montserrat:900');
 
 body {
-    background: radial-gradient(ellipse at bottom, #022227 0%, #000 100%);
+    background: radial-gradient(ellipse at bottom, #000 0%, #000 100%);
     position: relative;
     height: 100vh;
     width: auto;
@@ -551,7 +551,7 @@ h1:nth-child(2) {
 }
 
 .about {
-    background-color: #111;
+    background-color: #000;
     color: #fff;
     font-size: 18px;
 
