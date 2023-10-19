@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <title>Lisa Downie Portfolio</title>
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <!-- <a href="#">Lisa Downie</a> -->
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <!-- <div class="affix"><h1 class="affix-logo">Lisa Downie</h1></div> -->
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <span class="txt1">LisaDownie/</span><span class="txt2">Portfolio</span>
+        <div class="bar"></div>
+    </div>
+
+    <!--end -->
+
+    <footer class="footer">
+        <p>Lisa Downie © 2023. All Rights Reversed </p>
+    </footer>
+
+    <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+
+        $('.navTrigger').click(function () {
+            $(this).toggleClass('active');
+            console.log("Clicked menu");
+            $("#mainListDiv").toggleClass("show_list");
+            $("#mainListDiv").fadeIn();
+
+        });
+
+        // portfolio title anim
+        var t2 = new SplitText('.txt2').chars,
+            color2 = '#B621FE',
+            color1 = '#fff',
+            moveBar = () => { gsap.set('.bar', { left: gsap.getProperty('.txt1', 'width') + 1 }) };
+
+        gsap.timeline({ delay: 0.2 })
+            .set('.txt1', { color: color1, fontWeight: 'regular' })
+            .set('.txt2', { color: color2, fontWeight: 'bold', opacity: 0, x: gsap.getProperty('.txt1', 'width') - 2, immediateRender: true })
+            .set('.bar', { left: 1, backgroundColor: color1, immediateRender: true })
+
+            .to('.bar', { duration: 0.1, opacity: 0, ease: Expo.easeIn, yoyo: true, repeat: 5, repeatDelay: 0.3 }, 0)
+            .from('.txt1', { duration: 1.1, width: 0, ease: SteppedEase.config(14), onUpdate: moveBar }, 2.5)
+            .to('.bar', { duration: 0.05, backgroundColor: color2 }, '+=0.15')
+            .to('.bar', { duration: 1.0, width: 290, ease: Power4.easeInOut }, '+=0.1')
+            .from('.container', { duration: 1.0, x: 135, ease: Power4.easeInOut }, '-=1.0')
+            .to('.txt2', { duration: 0.01, opacity: 1 }, '-=0.1')
+            .to('.bar', { duration: 0.4, x: 290, width: 0, ease: Power4.easeIn })
+            .from(t2, { duration: 0.6, opacity: 0, ease: Power3.easeInOut, stagger: 0.02 }, '-=0.5')
+            .to('.txt1', { duration: 1.5, opacity: 0.25, ease: Power3.easeInOut }, '-=1.2')
+            .timeScale(1.45)
+
+    </script>
+
+</body>
+
+</html>
