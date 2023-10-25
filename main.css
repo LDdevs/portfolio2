@@ -11,25 +11,23 @@ body {
 }
 
 .butn4 {
-    margin: -20px;
     position:relative;
-    /* background: #ff0000; */
-    color: #fff;
+    /* background: #000; */
+    color: #B621FE;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 0.5rem;
-    
-    padding-left: 20px;
-    padding-right: 20px;
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    padding: 10px 30px;
     transition: 0.5s;
   }
   
   .butn4:hover {
     background: #fff;
-    color: #fff;
-    margin: auto;
-    box-shadow: 0 0 15px #ff99cc;
-    transform: rotate(360deg);
+    color: #B621FE;
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px #ff99cc;
+    animation: shine 8s linear infinite;
   }
 
 
@@ -101,7 +99,7 @@ body {
 }
 
 .nav div.main_list ul li a:hover {
-    color: #000000;
+    color: #B621FE;
     animation: shine 8s linear infinite;
 }
 
