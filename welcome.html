@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Welcome</title>
+</head>
+
+<body>
+
+
+    <div class="bg-text-container">
+        <div class="animate-text">
+            <span>Lisa Downie&nbsp;</span>
+            <span>Lisa Downie&nbsp;</span>
+        </div>
+        <div class="animate-text left">
+            <span>Lisa Downie&nbsp;</span>
+            <span>Lisa Downie&nbsp;</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col">
+            <h1>Heading</h1>
+            <p>Lobortis primis, ultrices? Earum mollis! Ad consequuntur laboriosam ut possimus, minus expedita, adipisci
+                fermentum, officia maecenas voluptatibus eiusmod, laboriosam maiores aspernatur ad egestas tenetur
+                tempora.</p>
+        </div>
+    </div>
+
+</body>
+<script>
+    /* Set width of all animated text to match container */
+    let parent = document.querySelectorAll('.animate-text');
+    for (let i = 0; i < parent.length; i++) {
+        parent[i].style.width = parent[i].children[0].clientWidth + "px";
+    };
+</script>
+
+</html>
