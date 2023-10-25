@@ -11,23 +11,25 @@ body {
 }
 
 .butn4 {
-    position:relative;
-    /* background: #000; */
+    /* position:relative;
+    /* background: #000; 
     color: #B621FE;
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.5rem;
+    text-transform: uppercase;*/
+    font-size: 2.5rem;
     letter-spacing: 0.1em;
     padding: 10px 30px;
-    transition: 0.5s;
+    transition: 0.5s; 
   }
   
   .butn4:hover {
-    background: #fff;
+    color: #ffffff;
+    animation: shine 8s linear infinite;
+    /* background: #fff;
     color: #B621FE;
     letter-spacing: 0.25em;
     box-shadow: 0 0 35px #ff99cc;
-    animation: shine 8s linear infinite;
+    animation: shine 8s linear infinite; */
   }
 
 
