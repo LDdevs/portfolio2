@@ -81,6 +81,7 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+    
 }
 
 .nav div.main_list ul li {
@@ -91,6 +92,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .nav div.main_list ul li a {
@@ -101,8 +103,9 @@ body {
 }
 
 .nav div.main_list ul li a:hover {
-    color: #B621FE;
+    /* color: #B621FE; */
     animation: shine 8s linear infinite;
+    color: #66fcf1;
 }
 
 
@@ -238,7 +241,7 @@ body {
         right: 0;
         left: 0;
         bottom: 0;
-        background-color: #B621FE;
+        background-color: #111;
         /*same background color of navbar*/
         background-position: center top;
     }
