@@ -144,7 +144,7 @@ body {
 }
 
 .jumbotron {
-    background-image: url(images/mountain1.jpg);
+    background-image: url(images/mountain2.jpg);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -558,9 +558,8 @@ h1 {
     left: 50%;
     transform: translateX(-50%);
     color: #B621FE;
-    ;
-    background: url(images/spackle.gif);
-    background-size: auto 100%;
+    
+    background-size: 100%;
     background-clip: text;
     /* text-fill-color: transparent; */
     -webkit-background-clip: text;
@@ -748,7 +747,8 @@ span.text {
 
 .text2 {
     font-size: 30px;
-    color: #1FD1F9;
+    color: #fff;
+    font-weight: 700;
 }
 
 @keyframes text {
