@@ -718,7 +718,7 @@ span.text {
 }
 
 .links {
-    width: 100vw;
+    max-width: 100px;
     height: auto;
     padding: 10px;
     font-family: 'Roboto', sans-serif;
@@ -727,7 +727,7 @@ span.text {
     letter-spacing: 2.5px;
     font-weight: 500;
     color: #000;
-    background-color: #fff;
+    background-color: #1FD1F9;
     border: none;
     border-radius: 45px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -741,12 +741,26 @@ span.text {
     justify-content: center;
     align-items: center;
     margin-top: 1px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 380px) {
+    .links {
+        max-width: auto;
+        font-size: 0.1px;
+        padding: auto;
+        position: absolute;
+        margin: auto;
+        display: flex;
+    }
+    
 }
 .links:hover {
-    background-color: #1FD1F9;
+    background-color: #fff;
     box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
     color: #fff;
     transform: translateY(-7px);
+    text-decoration: none;
 }
 
 .collect {
