@@ -7,6 +7,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Quicksand", sans-serif;
+    scroll-behavior: smooth;
 
 }
 
@@ -722,7 +723,7 @@ span.text {
 
 .container1 {
     text-align: center;
-
+    
     display: grid;
     position: relative;
     top: 50%;
@@ -752,9 +753,10 @@ span.text {
 }
 
 .text2 {
-    font-size: 30px;
+    font-size: 60px;
     color: #fff;
     font-weight: 700;
+    margin-top: 30px;
 }
 
 @keyframes text {
@@ -836,7 +838,7 @@ span.text {
         line-height: 20%;
     }
 }
-@media screen and (min-width: 480px) {
+/* @media screen and (min-width: 480px) {
     .links {
         max-width: auto;
         font-size: 0.1px;
@@ -858,7 +860,7 @@ span.text {
         padding: auto;
         margin: 475px 0px;
         overflow: -moz-hidden-unscrollable;
-    }
+    } 
     
     
     .text2 {
@@ -866,11 +868,11 @@ span.text {
         color: #fff;
         font-weight: 700;
     }
-}
-@media screen and (max-width: 780px) {
+}*/
+@media screen and (max-width: 780px) { 
     .links {
-        max-width: auto;
-        font-size: 0.1px;
+        width: auto;
+        
         padding: auto;
         position: absolute;
         margin: auto;
@@ -879,9 +881,12 @@ span.text {
 
     .text1 {
         font-size: 30px;
-        font-weight: 500;
-        letter-spacing: 5px;
-        margin: 275px 0px;
+        /* word-break: break-all; */
+        /* border: solid 5px red; */
+        letter-spacing: 1px;
+        margin: 250px auto;
+        margin-top: 400px;
+        
         
     }
     .container1 {
@@ -892,11 +897,15 @@ span.text {
     
     
     .text2 {
-        font-size: 20px;
-        color: #fff;
+        font-size: 60px;
+        color: #66fcf1;
         font-weight: 700;
+        word-break: break-all;
+        line-height: 50px;
+        /* white-space:inherit; */
     }
 }
+
 
     /* @media screen and (max-width: 280px) {
         .links {
