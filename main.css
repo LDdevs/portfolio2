@@ -826,12 +826,12 @@ span.text {
         padding: auto;
         /* margin-top: 475px; */
         font-size: 5px;;
-        z-index: 250;
+        /* z-index: 250; */
         
     }
     
     .text2 {
-        font-size: 60px;
+        font-size: 10px;
         color: #fff;
         
         max-width:fit-content;
@@ -897,11 +897,11 @@ span.text {
     
     
     .text2 {
-        font-size: 60px;
+        font-size: 45px;
         color: #66fcf1;
         font-weight: 700;
         word-break: break-all;
-        line-height: 50px;
+        line-height: 10px;
         /* white-space:inherit; */
     }
 }
