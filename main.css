@@ -736,6 +736,7 @@ span.text {
 .container1 span {
     text-transform: uppercase;
     display: block;
+    
 }
 
 .text1 {
@@ -747,6 +748,7 @@ span.text {
     background: #1FD1F9;
     position: relative;
     animation: text 2.5s 1;
+    
 }
 
 .text2 {
@@ -771,14 +773,14 @@ span.text {
 
 
 .links {
-    max-width: 100px;
+    max-width: 100%;
     height: auto;
     padding: 10px;
     font-family: 'Roboto', sans-serif;
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 2.5px;
-    font-weight: 500;
+    font-weight: 700;
     color: #000;
     background-color: #1FD1F9;
     border: none;
@@ -794,7 +796,10 @@ span.text {
     justify-content: center;
     align-items: center;
     margin-top: 1px;
+    width: 30%;
+    margin: auto;
     text-decoration: none;
+    
 }
 
 @media screen and (max-width: 480px) {
