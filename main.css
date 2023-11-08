@@ -145,10 +145,11 @@ body {
 
 .jumbotron {
     background-image: url(images/mountain2.jpg);
-    background-size: 150%;
+    background-size: 100%;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-
+    background-size: cover;
     background-color: #000;
     display: flex;
     justify-content: center;
@@ -727,9 +728,9 @@ span.text {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100vw;
+    width: 100%;
     padding: 20px 0px;
-    margin: 200px 0px;
+    margin: 475px 0px;
 }
 
 .container1 span {
@@ -807,13 +808,92 @@ span.text {
     }
 
     .text1 {
-        font-size: 20px;
+        font-size: 30px;
         font-weight: 500;
-        letter-spacing: 5px;
-        margin-bottom: auto;
+        letter-spacing: 20%;
+        
+    }
+    .container1 {
+        margin: 475px 0px;
+        line-height: 5px;
+        padding: auto;
+        /* margin-top: 475px; */
+        font-size: 5px;;
+        z-index: 250;
+        
+    }
+    
+    .text2 {
+        font-size: 60px;
+        color: #fff;
+        
+        max-width:fit-content;
+        line-height: 20%;
+    }
+}
+@media screen and (min-width: 480px) {
+    .links {
+        max-width: auto;
+        font-size: 0.1px;
+        padding: auto;
+        position: absolute;
+        margin: auto;
+        display: flex;
     }
 
-    @media screen and (max-width: 480px) {
+    .text1 {
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: 20%;
+        position:relative;
+    }
+    .container1 {
+        margin: 475px 0px;
+        line-height: 5px;
+        padding: auto;
+        margin: 475px 0px;
+        overflow: -moz-hidden-unscrollable;
+    }
+    
+    
+    .text2 {
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+    }
+}
+@media screen and (max-width: 780px) {
+    .links {
+        max-width: auto;
+        font-size: 0.1px;
+        padding: auto;
+        position: absolute;
+        margin: auto;
+        display: flex;
+    }
+
+    .text1 {
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: 5px;
+        margin: 275px 0px;
+        
+    }
+    .container1 {
+        margin: auto;
+        line-height: 5px;
+        padding: auto;
+    }
+    
+    
+    .text2 {
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+    }
+}
+
+    /* @media screen and (max-width: 280px) {
         .links {
             max-width: auto;
             font-size: 0.1px;
@@ -830,7 +910,7 @@ span.text {
             margin-bottom: auto;
         }
 
-    }
+    } */
 
     .links:hover {
         background-color: #fff;
