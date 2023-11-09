@@ -937,6 +937,15 @@ span.text {
 }
 
 @media screen and (max-width: 780px) { 
+    .container3 {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 80%;
+        transform: translateX(-50%, -50%);
+        left: 49.5%;
+      }
+
     .links {
         width: 30%;
         
