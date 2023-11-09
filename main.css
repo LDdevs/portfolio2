@@ -740,7 +740,7 @@ span.text {
 .container1 span {
     text-transform: uppercase;
     /* display: block; */
-    border: solid 5px red;
+    /* border: solid 5px red; */
     max-width: auto;
     
     
