@@ -731,7 +731,7 @@ span.text {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100vw;
+    max-width: 100vw;
     padding: 20px 0px;
     margin: 450px 0px;
     /* border: solid 5px red; */
@@ -740,6 +740,9 @@ span.text {
 .container1 span {
     text-transform: uppercase;
     /* display: block; */
+    border: solid 5px red;
+    max-width: auto;
+    
     
 }
 
@@ -847,11 +850,11 @@ span.text {
         
     }
     .container1 {
-        margin: 0px 0px;
+        margin: 0px;
         line-height: 5px;
         /* padding: auto; */
         /* margin-top: 475px; */
-        font-size: 5px;;
+        font-size: 5px;
         /* z-index: 250; */
         
     }
@@ -859,8 +862,7 @@ span.text {
     .text2 {
         font-size: 10px;
         color: #fff;
-        border: solid 5px red;
-        max-width: 95.5vw
+        
         /* max-width:fit-content; */
         /* line-height: 20%; */
     }
@@ -890,7 +892,10 @@ span.text {
         margin: auto;
         line-height: 5px;
         padding: auto;
-        height: 100vh;
+        height:fit-content;
+        width: fit-content;
+        max-width: 100%;
+        /* border: solid 5px red; */
     }
     
     
