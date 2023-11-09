@@ -842,8 +842,8 @@ span.text {
 
     .text1 {
         font-size: 30px;
-        font-weight: 1500;
-        letter-spacing: 40%;
+        font-weight: 500;
+        letter-spacing: 20%;
         
     }
     .container1 {
@@ -859,7 +859,8 @@ span.text {
     .text2 {
         font-size: 10px;
         color: #fff;
-        
+        border: solid 5px red;
+        max-width: 95.5vw
         /* max-width:fit-content; */
         /* line-height: 20%; */
     }
@@ -889,7 +890,7 @@ span.text {
         margin: auto;
         line-height: 5px;
         padding: auto;
-    
+        height: 100vh;
     }
     
     
