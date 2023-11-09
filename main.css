@@ -291,7 +291,7 @@ body {
 }
 
 .navTrigger i {
-    background-color: #66fcf1;
+    background-color: #1FD1F9;
     border-radius: 2px;
     content: '';
     display: block;
@@ -746,7 +746,7 @@ span.text {
     font-weight: 700;
     letter-spacing: 0px;
     margin-bottom: 30px;
-    background: #1FD1F9;
+    background: #B621FE;
     position: relative;
     animation: text 2.5s 1;
     
@@ -798,7 +798,7 @@ span.text {
     justify-content: center;
     align-items: center;
     margin-top: 1px;
-    width: 30%;
+    width: auto;
     margin: auto;
     text-decoration: none;
     
@@ -807,6 +807,7 @@ span.text {
 @media screen and (max-width: 480px) {
     .links {
         max-width: auto;
+        width:auto;
         font-size: 0.1px;
         padding: auto;
         position: absolute;
@@ -871,12 +872,12 @@ span.text {
 }*/
 @media screen and (max-width: 780px) { 
     .links {
-        width: auto;
+        width: 30%;
         
         padding: auto;
         position: absolute;
         margin: auto;
-        display: flex;
+        /* display: flex; */
     }
 
     .text1 {
