@@ -103,6 +103,7 @@ body {
     padding: 10px;
     font-size: 2rem;
     border-radius: 45px;
+    position: sticky;
 }
 
 .nav div.main_list ul li a:hover {
@@ -854,8 +855,8 @@ span.text {
         font-size: 10px;
         color: #fff;
         
-        max-width:fit-content;
-        line-height: 20%;
+        /* max-width:fit-content; */
+        /* line-height: 20%; */
     }
 }
 /* @media screen and (min-width: 480px) {
@@ -904,8 +905,8 @@ span.text {
         /* word-break: break-all; */
         /* border: solid 5px red; */
         letter-spacing: 1px;
-        margin: 250px auto;
-        margin-top: 400px;
+        margin: 100px auto;
+        margin-top: 700px;
         
         
     }
@@ -920,8 +921,8 @@ span.text {
         font-size: 45px;
         color: #66fcf1;
         font-weight: 700;
-        word-break: break-all;
-        line-height: 10px;
+        /* word-break: break-all;
+        line-height: 10px; */
         /* white-space:inherit; */
     }
 }
