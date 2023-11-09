@@ -8,6 +8,7 @@ body {
     box-sizing: border-box;
     font-family: "Quicksand", sans-serif;
     scroll-behavior: smooth;
+    overscroll-behavior: contain;
 
 }
 
@@ -730,14 +731,15 @@ span.text {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
+    width: 100vw;
     padding: 20px 0px;
     margin: 450px 0px;
+    /* border: solid 5px red; */
 }
 
 .container1 span {
     text-transform: uppercase;
-    display: block;
+    /* display: block; */
     
 }
 
@@ -754,14 +756,16 @@ span.text {
 }
 
 .text2 {
-    font-size: 60px;
+    font-size: 50px;
     color: #fff;
-    font-weight: 700;
-    margin-top: 30px;
-    line-height: 50%;
+    /* font-weight: 700; */
+    margin-top: 20px;
+    line-height: 60%;
+    /* border: solid 5px red; */
 }
 
 .text2:hover {
+    /* transition: all 0.5s; */
     transition: all 0.5s;
   -webkit-text-stroke: 4px #d6f4f4;
   font-variation-settings: "wght" 900, "ital" 1;
@@ -775,6 +779,7 @@ span.text {
     25px 25px 0px #f40468,
     45px 45px 10px #482896;
   cursor: pointer;
+  
   }
 
   
@@ -837,14 +842,14 @@ span.text {
 
     .text1 {
         font-size: 30px;
-        font-weight: 500;
-        letter-spacing: 20%;
+        font-weight: 1500;
+        letter-spacing: 40%;
         
     }
     .container1 {
-        margin: 475px 0px;
+        margin: 0px 0px;
         line-height: 5px;
-        padding: auto;
+        /* padding: auto; */
         /* margin-top: 475px; */
         font-size: 5px;;
         /* z-index: 250; */
@@ -859,37 +864,7 @@ span.text {
         /* line-height: 20%; */
     }
 }
-/* @media screen and (min-width: 480px) {
-    .links {
-        max-width: auto;
-        font-size: 0.1px;
-        padding: auto;
-        position: absolute;
-        margin: auto;
-        display: flex;
-    }
 
-    .text1 {
-        font-size: 30px;
-        font-weight: 500;
-        letter-spacing: 20%;
-        position:relative;
-    }
-    .container1 {
-        margin: 475px 0px;
-        line-height: 5px;
-        padding: auto;
-        margin: 475px 0px;
-        overflow: -moz-hidden-unscrollable;
-    } 
-    
-    
-    .text2 {
-        font-size: 20px;
-        color: #fff;
-        font-weight: 700;
-    }
-}*/
 @media screen and (max-width: 780px) { 
     .links {
         width: 30%;
@@ -902,10 +877,10 @@ span.text {
 
     .text1 {
         font-size: 30px;
-        /* word-break: break-all; */
+        word-break: break-all;
         /* border: solid 5px red; */
-        letter-spacing: 1px;
-        margin: 100px auto;
+        /* letter-spacing: 1px; */
+        /* margin: 100px auto; */
         margin-top: 700px;
         
         
@@ -914,6 +889,7 @@ span.text {
         margin: auto;
         line-height: 5px;
         padding: auto;
+    
     }
     
     
@@ -928,24 +904,6 @@ span.text {
 }
 
 
-    /* @media screen and (max-width: 280px) {
-        .links {
-            max-width: auto;
-            font-size: 0.1px;
-            padding: auto;
-            position: absolute;
-            margin: auto;
-            display: flex;
-        }
-
-        .text1 {
-            font-size: 20px;
-            font-weight: 500;
-            letter-spacing: 5px;
-            margin-bottom: auto;
-        }
-
-    } */
 
     .links:hover {
         background-color: #fff;
